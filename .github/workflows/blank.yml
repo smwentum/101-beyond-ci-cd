@@ -14,5 +14,5 @@ jobs:
       with:
         # labels to be set when keyword is found
         labels: triage
-        keywords: '['help']'
+        keywords: '["help"]'
         
