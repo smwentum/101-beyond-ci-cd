@@ -1,18 +1,14 @@
-name: CI
-
-on: [push]
+name: "Triage"
+on:
+  issues:
+    types: [opened]
 
 jobs:
-  build:
-
+  triage:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Issue Labeler
-      uses: Naturalclar/issue-action@v1.0.0
-      with:
-        # labels to be set when keyword is found
-        labels: triage
-        keywords: '["help"]'
-        
+      - uses: Naturalclar/issue-action@v1.0.0
+        with:
+          keywords: '[""]'
+          labels: '["triage"]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
