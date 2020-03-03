@@ -1,4 +1,4 @@
-# Open Source 101: Beyond CI/CD
+# Open Source 101: Beyond CI/CD: Me learning CI/CD
 
 ## 🎯 Goal
 
